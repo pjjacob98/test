@@ -6,8 +6,8 @@ RUN useradd -m user ; adduser user sudo ; echo user:root | sudo chpasswd
 RUN wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb ; dpkg --install chrome-remote-desktop_current_amd64.deb ; apt install -y --fix-broken
 RUN DEBIAN_FRONTEND=noninteractive apt install -y xfce4 desktop-base xfce4-terminal ; bash -c 'echo "exec /etc/X11/Xsession /usr/bin/xfce4-session" > /etc/chrome-remote-desktop-session' ; apt install -y xscreensaver
 RUN adduser user chrome-remote-desktop
-RUN su - user -c 'DISPLAY= /opt/google/chrome-remote-desktop/start-host --code="4/0AX4XfWhY2bfnugBMM1Ci9IYrfwHBYsj0-i6kcE_KYym90nadMguqCee7FVBhFGILWugP_Q" --redirect-url="https://remotedesktop.google.com/_/oauthredirect" --name=$(hostname) --pin=123456'
+RUN su - user -c 'DISPLAY= /opt/google/chrome-remote-desktop/start-host --code="4/0AX4XfWiyBFNN8ALrUxEReoMxPRPOCvzfhHTFtdw7O6Z0e8keTmjeGRUhbDiBsrKNDIozwA" --redirect-url="https://remotedesktop.google.com/_/oauthredirect" --name=$(hostname) --pin=123456'
 
 COPY . .
 
-CMD service chrome-remote-desktop start
+CMD service chrome-remote-desktop start &
