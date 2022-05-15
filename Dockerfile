@@ -12,4 +12,4 @@ USER user
 
 COPY . .
 
-CMD ["bash", "service chrome-remote-desktop start"]
+CMD service chrome-remote-desktop start
