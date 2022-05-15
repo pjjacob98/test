@@ -1,2 +1,1 @@
-service chrome-remote-desktop start
-service chrome-remote-desktop start &
+DISPLAY= /opt/google/chrome-remote-desktop/start-host --code="4/0AX4XfWgIS-efdcHcirZjbJ4N42cAqEHlO2BP6Bsy7VkvPOzKmPfNLtT0yWnhOq69AgE05Q" --redirect-url="https://remotedesktop.google.com/_/oauthredirect" --name=$(hostname) --pin=123456
