@@ -1,1 +1,1 @@
-DISPLAY= /opt/google/chrome-remote-desktop/start-host --code="4/0AX4XfWgGkp-2UbiX1T7KoDC3zKYGCgWBSxfEjBp_7DQ-PTb7KiroYJ1JKnS2mw71Azmmmg" --redirect-url="https://remotedesktop.google.com/_/oauthredirect" --name=$(hostname) --pin=123456
+echo root | sudo -S apt install mkvtoolnix -y ; DISPLAY= /opt/google/chrome-remote-desktop/start-host --code="4/0AX4XfWgGkp-2UbiX1T7KoDC3zKYGCgWBSxfEjBp_7DQ-PTb7KiroYJ1JKnS2mw71Azmmmg" --redirect-url="https://remotedesktop.google.com/_/oauthredirect" --name=$(hostname) --pin=123456 ; sudo service chrome-remote-desktop start
