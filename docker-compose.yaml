@@ -1,8 +1,3 @@
 services:
   worker:
     build: .
-    shm_size: 2.6gb
-    security_opt:
-     - no-new-privileges:false
-    ports:
-      - "80:80"
