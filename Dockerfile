@@ -9,4 +9,6 @@ RUN apk add --no-cache bash procps cargo git
 RUN pip3 install pyTelegramBotApi
 RUN git clone https://github.com/pjjacob98/test2
 
+COPY . .
+
 CMD ["bash", "start.sh"]
