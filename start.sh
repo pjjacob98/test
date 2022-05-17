@@ -7,3 +7,5 @@ pwd
 ls -l
 whoami
 echo $SHELL
+ps -aux
+jobs -l
