@@ -10,4 +10,4 @@ RUN pip3 install wheel
 
 COPY . .
 
-CMD bash
+CMD ["bash", "start.sh"]
