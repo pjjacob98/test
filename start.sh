@@ -4,8 +4,7 @@ pip3 install pyTelegramBotApi
 python3 pyTelegramShellBot.py &
 jobs -l
 ps -aux
-whoami
 echo $SHELL
-disown -h %%
-ps -aux
+disown
 jobs -l
+ps -aux
